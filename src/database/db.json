@@ -1,35 +1,24 @@
 {
-
-    "MovieTicket":[ {
-
-        "name":"Tanishka",
-        "num":"687676743",
-        "aadharno":"6534587879" ,
-        "CheckIn":"23-01-26",
-        "CheckOut":"29-01-26",
-        "city":"Bhopal",
-        "people":"3"
-
-
-    },{
-
-        "name":"Mahak",
-        "num":"576868",
-        "aadharno":"24354587879" ,
-        "CheckIn":"25-01-26",
-        "CheckOut":"28-01-26",
-        "city":"Chandrashila",
-        "people":"2"
-    },{
-         "name":"Satya",
-        "num":"112676743",
-        "aadharno":"79776587879" ,
-        "CheckIn":"25-01-26",
-        "CheckOut":"31-01-26",
-        "city":"Goa",
-        "people":"1"
-
-    } ]
-
-
+  "MovieTicket": [
+    {
+      "name": "Mahak",
+      "num": "576868",
+      "aadharno": "24354587879",
+      "CheckIn": "25-01-26",
+      "CheckOut": "28-01-26",
+      "city": "Chandrashila",
+      "people": "2",
+      "id": "e1df"
+    },
+    {
+      "name": "Satya",
+      "num": "112676743",
+      "aadharno": "79776587879",
+      "CheckIn": "25-01-26",
+      "CheckOut": "31-01-26",
+      "city": "Goa",
+      "people": "1",
+      "id": "8ed7"
+    }
+  ]
 }

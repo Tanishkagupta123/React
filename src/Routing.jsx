@@ -18,6 +18,7 @@ const Routing = () => {
 
       <Route path='home' element={<Home/>}/>
       <Route path='about' element={<About/>}/>
+  <Route path='datashow' element={<Datashow/>}/>
       <Route path='services' element={<Services/>}/>
     
       <Route path='*' element={<h1>This page is not available</h1>}/>
@@ -26,7 +27,6 @@ const Routing = () => {
       </Route>
 
 
-  <Route path='datashow' element={<Datashow/>}/>
 
     </Routes>
 
