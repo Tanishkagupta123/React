@@ -5,6 +5,7 @@ import Home from './page/Home'
 import About from './page/About'
 import Services from './page/Services'
 import Datashow from './Datashow'
+import Bookingform from './Bookingform'
 
 const Routing = () => {
   return (
@@ -20,6 +21,7 @@ const Routing = () => {
       <Route path='about' element={<About/>}/>
   <Route path='datashow' element={<Datashow/>}/>
       <Route path='services' element={<Services/>}/>
+      <Route path='booking' element={<Bookingform/>}/>
     
       <Route path='*' element={<h1>This page is not available</h1>}/>
       
