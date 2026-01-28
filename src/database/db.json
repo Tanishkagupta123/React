@@ -19,6 +19,16 @@
       "city": "Goa",
       "people": "1",
       "id": "8ed7"
+    },
+    {
+      "id": "fcd1",
+      "name": "tanishka gupta",
+      "num": "3232412312",
+      "aadharno": "57687987989",
+      "CheckIn": "2026-01-26",
+      "CheckOut": "2026-01-28",
+      "city": "Indore",
+      "people": "2"
     }
   ]
 }

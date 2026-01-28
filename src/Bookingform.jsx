@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
+import axios from "axios";
+
 
 const Bookingform = () => {
-
 
   let [form, setform] = useState({
 
@@ -15,23 +16,54 @@ const Bookingform = () => {
 
   })
 
-  let handlechange=()=>{
+  let handlechange=(e)=>{
 
 
-    setform({...form,[e.terget.name]:[e.terget.value]})
+    setform({...form,[e.target.name]:e.target.value})
+  }
+
+
+  let handleSubmit=(e)=>{
+
+    e.preventDefault()
+
+    let valid=true
+
+    if (form.name.trim()==''){
+
+      alert('name cannot be empty')
+      valid=false
+
+    }
+
+    if (valid){
+
+      let api='http://localhost:3000/MovieTicket'
+      axios.post(api,form).then( (e)=>{
+
+        alert('Booking Confirmed')
+      }
+
+
+
+
+      )
+    }
+
   }
 
   return (
 
     <>
 
+    
 
-      <form>
+      <form onSubmit={handleSubmit}>
 
         Enter name: <input type="text" name='name' value={form.name} onChange={handlechange} /> <br /><br />
         Enter num: <input type="text" name='num' value={form.num} onChange={handlechange} /> <br /><br />
 
-        Enter aadharno: <input type="text" name='adharno' value={form.aadharno} onChange={handlechange} /> <br /><br />
+        Enter aadharno: <input type="text" name='aadharno' value={form.aadharno} onChange={handlechange} /> <br /><br />
 
         Enter Checkin: <input type="date" name='CheckIn' value={form.CheckIn} onChange={handlechange} /> <br /><br />
 
@@ -53,7 +85,7 @@ const Bookingform = () => {
 
         </select><br /><br />
 
-        Enter People: <input type="date" name='people' value={form.people} onChange={handlechange} /> <br /><br />
+        Enter People: <input type="number" name='people' value={form.people} onChange={handlechange} /> <br /><br />
 
         <button>Book Now</button><br /><br />
 
