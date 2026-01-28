@@ -39,14 +39,13 @@ const Bookingform = () => {
     if (valid){
 
       let api='http://localhost:3000/MovieTicket'
-      axios.post(api,form).then( (e)=>{
+
+      let loggedemail = localStorage.getItem('user')
+
+      axios.post(api,{...form,loggedinuser:loggedemail }).then( (e)=>{
 
         alert('Booking Confirmed')
       }
-
-
-
-
       )
     }
 
