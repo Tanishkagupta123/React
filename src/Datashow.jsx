@@ -70,6 +70,7 @@ const Datashow = () => {
                         <th>City</th>
                         <th>People</th>
                         <th>Delete</th>
+                        <th>Edit</th>
 
 
 
@@ -95,6 +96,7 @@ const Datashow = () => {
                             <td>{e.city}</td>
                             <td>{e.people}</td>
                             <td onClick={() => { Deletedata(e.id) }}><button>Delete</button></td>
+                            <td>Edit</td>
 
 
 
