@@ -65,6 +65,8 @@ const Datashow = () => {
 
 
             Fetchdata()
+
+            seteditId(null)
             alert("Data Delated")
         })
     }
@@ -73,9 +75,23 @@ const Datashow = () => {
 
     seteditId(e.id)
 
+    setform({ name :e.name,num: e.num ,aadharno:e.aadharno, CheckIn:e.CheckIn, CheckOut:e.CheckOut,
+        city:e.city, people:e.people })
+
   }
 
   let handleSubmit=(e)=>{
+
+    e.preventDefault()
+
+    let loggedemail = localStorage.getItem('user')
+
+
+    let api=`http://localhost:3000/MovieTicket/${editId}`
+
+    axios.put(api,{...form,loggedinuser:loggedemail }).then( (e)=>{
+        alert("Data Updated")
+    })
 
 
   }
@@ -179,24 +195,10 @@ const Datashow = () => {
 
         <button>Update Now</button><br /><br />
 
-
-
       </form>
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
         )}
-
-
-
 
 
         </>
