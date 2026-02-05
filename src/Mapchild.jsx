@@ -18,12 +18,7 @@ const Mapchild = ({mydata}) => {
 
            </div>
 
-        )
-
-
-        )
-
-    }
+        ) ) }
     
     
     </>

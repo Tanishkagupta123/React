@@ -59,7 +59,7 @@ const Datashow = () => {
 
     let Deletedata = (id) => {
 
-        let api = `http://localhost:3000/MovieTicket/${id} `
+        let api = `http://localhost:3000/MovieTicket/${id}`
 
         axios.delete(api).then(() => {
 
@@ -87,9 +87,10 @@ const Datashow = () => {
     let loggedemail = localStorage.getItem('user')
 
 
-    let api=`http://localhost:3000/MovieTicket/${editId}`
+    let api= `http://localhost:3000/MovieTicket/${editId}`
 
     axios.put(api,{...form,loggedinuser:loggedemail }).then( (e)=>{
+        
         alert("Data Updated")
     })
 

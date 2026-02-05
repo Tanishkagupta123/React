@@ -45,18 +45,12 @@ const Bookingform = () => {
       axios.post(api,{...form,loggedinuser:loggedemail }).then( (e)=>{
 
         alert('Booking Confirmed')
-      }
-      )
-    }
-
-  }
+      } )
+    } }
 
   return (
 
     <>
-
-    
-
       <form onSubmit={handleSubmit}>
 
         Enter name: <input type="text" name='name' value={form.name} onChange={handlechange} /> <br /><br />

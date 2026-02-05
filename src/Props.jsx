@@ -13,7 +13,6 @@ const Props = () => {
         <PropsChild img="/vite.svg" price="699" dis="shirt" />
         <PropsChild img="/kids 2.jpg" price="699" dis="shirt" />
 
-
 </div>
       
     </div>

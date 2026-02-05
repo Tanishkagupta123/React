@@ -2,8 +2,6 @@ let Footer1=()=>{
     return(
         <h1>this is Footer1</h1>
     )
-
-
 }
 
 let Footer2=()=>{
