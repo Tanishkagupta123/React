@@ -19,7 +19,7 @@ const Routing = () => {
 
       <Route path='home' element={<Home/>}/>
       <Route path='about' element={<About/>}/>
-  <Route path='datashow' element={<Datashow/>}/>
+      <Route path='datashow' element={<Datashow/>}/>
       <Route path='services' element={<Services/>}/>
       <Route path='booking' element={<Bookingform/>}/>
     
