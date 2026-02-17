@@ -37,8 +37,9 @@ const Bookingform = () => {
     }
 
     if (valid){
+      
+      let api='http://127.0.0.1:8000/list/'
 
-      let api='http://localhost:3000/MovieTicket'
 
       let loggedemail = localStorage.getItem('user')
 
